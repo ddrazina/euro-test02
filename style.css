@@ -1,0 +1,125 @@
+body {
+    background-color: #1f2369;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+
+img {
+    width: 40px;
+}
+
+#container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+#grupaA, #grupaB, #grupaC, #grupaD, #grupaE, #grupaF {
+    color: #eee;
+    min-width: 200px;
+    border-radius: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+div>p {
+    border-bottom: 1px solid #1f2369 ;
+    margin: 0;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #204dff;
+}
+
+#confirmButton, #undo {
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.nazivGrupe {
+    font-size: 15px;
+
+}
+
+.a, .b, .c, .d, .e, .f {
+font-size: 20px;
+display: flex;
+align-items: center;
+gap: 10px;
+/* max-width: 10vw;
+min-width: 10vw; */
+}
+
+.unconfirm, .undo{
+    background-color: lightgray;
+    color: lightslategray;
+}
+
+#login {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#message {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    color: goldenrod;
+}
+
+
+#table, td, tr {
+    border: 1px solid black;
+    color: white;
+}
+#table {
+    min-width: 60vw;
+    margin: 0 auto;
+    padding: 10px
+}
+td {
+    padding: 10px
+}
+
+
+
+
+
+.four-in-row, .three-in-row, .two-in-row, .one-in-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2px 0;
+}
+.four-in-row div {
+    flex-basis: 25%;
+    max-width: 20vw;
+}
+
+.three-in-row div {
+    flex-basis: 30%;
+    max-width: 20vw;
+}
+.two-in-row div{
+    flex-basis: 48%;
+    max-width: 20vw;
+}
+.one-in-row div{
+    flex-basis: 100%;
+    max-width: 20vw;
+}
+
+
+
+
+
+
