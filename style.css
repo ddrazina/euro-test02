@@ -17,7 +17,7 @@ img {
 }
 #grupaA, #grupaB, #grupaC, #grupaD, #grupaE, #grupaF {
     color: #eee;
-    min-width: 200px;
+    min-width: 100px;
     border-radius: 40px;
     text-align: center;
     margin-bottom: 10px;
@@ -39,7 +39,7 @@ div>p {
 }
 
 .nazivGrupe {
-    font-size: 15px;
+    font-size: 20px;
 
 }
 

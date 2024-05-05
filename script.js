@@ -66,9 +66,14 @@ logInButton.addEventListener("click", createPlayer);
 
 //funkcija:
 function chooseWinner(event) {
+  if (event.target.tagName === 'IMG') {
+    // Prevent the default action of clicking on the image
+    event.preventDefault();
+    this.click();
+  }
   let eventTargetName = event.target;
   let number01 = 0;
-  let color = "green";
+  let color = "darkblue";
   let funct01 = chooseWinner;
   chooseTeam(eventTargetName, funct01, number01, color);
 
@@ -81,10 +86,16 @@ function chooseWinner(event) {
         "Choose a second placed team from each of the groups!";
     });
 
+
     function chooseSecond(event) {
+      if (event.target.tagName === 'IMG') {
+        // Prevent the default action of clicking on the image
+        event.preventDefault();
+        this.click();
+      }
       let eventTargetName = event.target;
       let number = 1;
-      let color = "darkred";
+      let color = "mediumblue";
       let funct = chooseSecond;
       chooseTeam(eventTargetName, funct, number, color);
 
@@ -98,13 +109,22 @@ function chooseWinner(event) {
         });
 
         function chooseThird(event) {
+          if (event.target.tagName === 'IMG') {
+            // Prevent the default action of clicking on the image
+            event.preventDefault();
+            this.click();
+          }
           let eventTargetName = event.target;
           let number = 2;
-          let color = "orange";
+          let color = "blue";
           let funct = chooseThird;
           chooseTeam(eventTargetName, funct, number, color);
 
           counterThird++;
+
+          console.log(newPlayer)
+          console.log(pobjednici)
+
           if (counterThird === 4) {
             buttons.forEach(function (button) {
               button.removeEventListener("click", chooseThird);
@@ -127,7 +147,7 @@ function chooseTeam(eventTargetName, funct, number, color) {
   });
   let list = ["a", "b", "c", "d", "e", "f"];
   let string02 = eventTargetName.className;
-  let tekst = eventTargetName.innerHTML;
+  let tekst = eventTargetName.innerText;
   list.forEach(function (element) {
     if (string02 === element) {
       pobjednici[element][number] = tekst;
@@ -214,11 +234,14 @@ function fillPlayer() {
   newPlayer.round16_15.name = pobjednici.a[1];
   newPlayer.round16_16.name = pobjednici.b[1];
 
-  for (let i = 1; i < 17; i++) {
+  console.log(newPlayer)
+
+/*   for (let i = 1; i < 17; i++) {
     const id = i < 10 ? `0${i}` : `${i}`;
-    document.getElementById(`16R${id}`).innerHTML =
+    document.getElementById(`16R${id}`).innerText =
       newPlayer[`round16_${id}`].name;
-  }
+  } */
+  console.log(newPlayer)
 }
 
 function fillTheBracket() {
