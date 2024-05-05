@@ -236,12 +236,8 @@ function fillPlayer() {
 
   console.log(newPlayer)
 
-/*   for (let i = 1; i < 17; i++) {
-    const id = i < 10 ? `0${i}` : `${i}`;
-    document.getElementById(`16R${id}`).innerText =
-      newPlayer[`round16_${id}`].name;
-  } */
-  console.log(newPlayer)
+  
+
 }
 
 function fillTheBracket() {
