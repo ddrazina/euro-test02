@@ -2,6 +2,7 @@ body {
     background-color: #1f2369;
     font-family: Arial, Helvetica, sans-serif;
     cursor: default;
+    color: #eee;
 }
 
 img {
@@ -77,20 +78,6 @@ min-width: 10vw; */
 }
 
 
-#table, td, tr {
-    border: 1px solid black;
-    color: white;
-}
-#table {
-    min-width: 60vw;
-    margin: 0 auto;
-    padding: 10px
-}
-td {
-    padding: 10px
-}
-
-
 
 
 
@@ -111,13 +98,21 @@ td {
 }
 .two-in-row div{
     flex-basis: 48%;
-    max-width: 20vw;
+    max-width: 40vw;
 }
 .one-in-row div{
     flex-basis: 100%;
     max-width: 20vw;
 }
 
+.points {
+    display: flex;
+    justify-content: space-between;
+}
+.text-center {
+    text-align: center;
+    background-color: mediumblue;
+}
 
 
 
